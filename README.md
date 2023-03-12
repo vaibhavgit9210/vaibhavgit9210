@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @vaibhavgit9210
-- 👀 I’m interested in doing something
-- 🌱 I’m currently learning something
-- 💞️ I’m looking to collaborate on something
-- 📫 How to reach me on something? Well stay tuned...
+- 👋 Hi,
+- 👀 I’m currently exploring all fields in CS
+- 🌱 Working as Tech Consultant in an Indian leadin Fin-Tech company
+- 💞️ Always available to learn something totally NEW!!
+- 📫 
 
 <!---
 vaibhavgit9210/vaibhavgit9210 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
