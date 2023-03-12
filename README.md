@@ -1,7 +1,7 @@
 - 👋 Yo,
 - 👀 I’m currently exploring all fields in CS
-- 🌱 Working as Tech Consultant in an Indian leadin Fin-Tech company
-- 💞️ Always available to learn something totally NEW!!
+- 🌱 Working as a tech consultant in a leading FinTech company in India.
+- 🗺 Always available to learn something totally NEW!!
 - 📫 vaibhavplay5678@gmail.com
 
 <!---
