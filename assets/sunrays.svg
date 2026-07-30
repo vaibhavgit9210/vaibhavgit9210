@@ -51,25 +51,29 @@
   <rect x="40" y="119.5" width="920" height="1" fill="url(#rule)"/>
   <ellipse class="glow" cx="500" cy="120" rx="250" ry="95" fill="url(#glow)"/>
 
-  <!-- left rays -->
-  <rect class="rl" x="60"  y="34"  width="300" height="2" fill="url(#beam)" style="animation-delay:-0.4s; animation-duration:6.4s"/>
-  <rect class="rl" x="150" y="58"  width="220" height="2" fill="url(#beam)" style="animation-delay:-2.1s; animation-duration:7.6s"/>
-  <rect class="rl" x="40"  y="82"  width="340" height="2" fill="url(#beam)" style="animation-delay:-4.8s; animation-duration:6.9s"/>
-  <rect class="rl" x="120" y="104" width="260" height="2" fill="url(#beam)" style="animation-delay:-1.3s; animation-duration:8.2s"/>
-  <rect class="rl" x="90"  y="136" width="290" height="2" fill="url(#beam)" style="animation-delay:-5.6s; animation-duration:7.1s"/>
-  <rect class="rl" x="170" y="160" width="200" height="2" fill="url(#beam)" style="animation-delay:-3.0s; animation-duration:6.6s"/>
-  <rect class="rl" x="55"  y="184" width="320" height="2" fill="url(#beam)" style="animation-delay:-6.2s; animation-duration:7.9s"/>
-  <rect class="rl" x="140" y="206" width="230" height="2" fill="url(#beam)" style="animation-delay:-2.7s; animation-duration:6.2s"/>
+  <!-- left rays: gentle sine waves drifting outward -->
+  <g fill="none" stroke="url(#beam)" stroke-width="2" stroke-linecap="round">
+    <path class="rl" d="M 60 34 q 25 -8 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"   style="animation-delay:-0.4s; animation-duration:6.4s"/>
+    <path class="rl" d="M 150 58 q 20 6 40 0 t 40 0 t 40 0 t 40 0 t 40 0"           style="animation-delay:-2.1s; animation-duration:7.6s"/>
+    <path class="rl" d="M 40 82 q 28 -10 56 0 t 56 0 t 56 0 t 56 0 t 56 0 t 56 0"   style="animation-delay:-4.8s; animation-duration:6.9s"/>
+    <path class="rl" d="M 120 104 q 22 7 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0"   style="animation-delay:-1.3s; animation-duration:8.2s"/>
+    <path class="rl" d="M 90 136 q 24 -7 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0"   style="animation-delay:-5.6s; animation-duration:7.1s"/>
+    <path class="rl" d="M 170 160 q 20 8 40 0 t 40 0 t 40 0 t 40 0 t 40 0"          style="animation-delay:-3.0s; animation-duration:6.6s"/>
+    <path class="rl" d="M 55 184 q 26 -9 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0"   style="animation-delay:-6.2s; animation-duration:7.9s"/>
+    <path class="rl" d="M 140 206 q 19 6 38 0 t 38 0 t 38 0 t 38 0 t 38 0 t 38 0"   style="animation-delay:-2.7s; animation-duration:6.2s"/>
+  </g>
 
-  <!-- right rays -->
-  <rect class="rr" x="640" y="34"  width="300" height="2" fill="url(#beam)" style="animation-delay:-3.4s; animation-duration:7.3s"/>
-  <rect class="rr" x="630" y="58"  width="220" height="2" fill="url(#beam)" style="animation-delay:-0.9s; animation-duration:6.5s"/>
-  <rect class="rr" x="620" y="82"  width="340" height="2" fill="url(#beam)" style="animation-delay:-5.1s; animation-duration:8.0s"/>
-  <rect class="rr" x="620" y="104" width="260" height="2" fill="url(#beam)" style="animation-delay:-2.4s; animation-duration:6.8s"/>
-  <rect class="rr" x="620" y="136" width="290" height="2" fill="url(#beam)" style="animation-delay:-4.2s; animation-duration:7.5s"/>
-  <rect class="rr" x="630" y="160" width="200" height="2" fill="url(#beam)" style="animation-delay:-1.7s; animation-duration:6.3s"/>
-  <rect class="rr" x="625" y="184" width="320" height="2" fill="url(#beam)" style="animation-delay:-6.7s; animation-duration:7.7s"/>
-  <rect class="rr" x="630" y="206" width="230" height="2" fill="url(#beam)" style="animation-delay:-3.8s; animation-duration:6.1s"/>
+  <!-- right rays: mirrored waves -->
+  <g fill="none" stroke="url(#beam)" stroke-width="2" stroke-linecap="round">
+    <path class="rr" d="M 640 34 q 25 8 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"    style="animation-delay:-3.4s; animation-duration:7.3s"/>
+    <path class="rr" d="M 630 58 q 20 -6 40 0 t 40 0 t 40 0 t 40 0 t 40 0"          style="animation-delay:-0.9s; animation-duration:6.5s"/>
+    <path class="rr" d="M 620 82 q 28 10 56 0 t 56 0 t 56 0 t 56 0 t 56 0 t 56 0"   style="animation-delay:-5.1s; animation-duration:8.0s"/>
+    <path class="rr" d="M 620 104 q 22 -7 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0"  style="animation-delay:-2.4s; animation-duration:6.8s"/>
+    <path class="rr" d="M 620 136 q 24 7 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0"   style="animation-delay:-4.2s; animation-duration:7.5s"/>
+    <path class="rr" d="M 630 160 q 20 -8 40 0 t 40 0 t 40 0 t 40 0 t 40 0"         style="animation-delay:-1.7s; animation-duration:6.3s"/>
+    <path class="rr" d="M 625 184 q 26 9 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0"   style="animation-delay:-6.7s; animation-duration:7.7s"/>
+    <path class="rr" d="M 630 206 q 19 -6 38 0 t 38 0 t 38 0 t 38 0 t 38 0 t 38 0"  style="animation-delay:-3.8s; animation-duration:6.1s"/>
+  </g>
 
   <g class="sway">
     <text x="500" y="112" text-anchor="middle"
