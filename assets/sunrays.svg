@@ -1,17 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Vaibhav Kumar">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Vaibhav Kumar">
   <defs>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0"   stop-color="#ffd9a0" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffd9a0" stop-opacity="0.55"/>
-      <stop offset="1"   stop-color="#ffd9a0" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0"   stop-color="#e8e4f0" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#e8e4f0" stop-opacity="0.14"/>
-      <stop offset="1"   stop-color="#e8e4f0" stop-opacity="0"/>
-    </linearGradient>
+    <radialGradient id="scrim" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#07060c" stop-opacity="0.72"/>
+      <stop offset="0.7" stop-color="#07060c" stop-opacity="0.45"/>
+      <stop offset="1"   stop-color="#07060c" stop-opacity="0"/>
+    </radialGradient>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0"   stop-color="#ffc46b" stop-opacity="0.16"/>
+      <stop offset="0"   stop-color="#ffc46b" stop-opacity="0.14"/>
       <stop offset="0.6" stop-color="#bd93f9" stop-opacity="0.05"/>
       <stop offset="1"   stop-color="#bd93f9" stop-opacity="0"/>
     </radialGradient>
@@ -20,19 +15,31 @@
       <stop offset="0.5" stop-color="#ffffff"/>
       <stop offset="1"   stop-color="#ffd9a0"/>
     </linearGradient>
+
+    <!-- flame strands: two organic waves per colour, reused as halo + core -->
+    <path id="w1"  d="M -80 58  q 55 -24 110 -6  t 110 14 t 110 -20 t 110 6  t 110 16 t 110 -12 t 110 8  t 110 -18 t 110 10 t 110 -6" fill="none"/>
+    <path id="w2"  d="M -80 84  q 50 18  100 4   t 100 -12 t 100 8  t 100 -16 t 100 10 t 100 14 t 100 -8 t 100 -14 t 100 12 t 100 6 t 100 -10" fill="none"/>
+    <path id="w3"  d="M -80 96  q 60 -34 120 -8  t 120 20 t 120 -26 t 120 10 t 120 22 t 120 -18 t 120 6  t 120 -14 t 120 16" fill="none"/>
+    <path id="w4"  d="M -80 116 q 45 22  90 6    t 90 -14 t 90 10 t 90 -20 t 90 8  t 90 18 t 90 -10 t 90 -16 t 90 12 t 90 8 t 90 -12 t 90 6" fill="none"/>
+    <path id="w5"  d="M -80 128 q 65 -30 130 -4  t 130 18 t 130 -24 t 130 8  t 130 20 t 130 -16 t 130 10 t 130 -12" fill="none"/>
+    <path id="w6"  d="M -80 142 q 55 26  110 8   t 110 -18 t 110 12 t 110 -22 t 110 6  t 110 16 t 110 -10 t 110 -14 t 110 10 t 110 8" fill="none"/>
+    <path id="w7"  d="M -80 158 q 60 -28 120 -6  t 120 16 t 120 -22 t 120 12 t 120 18 t 120 -14 t 120 4  t 120 -16 t 120 12" fill="none"/>
+    <path id="w8"  d="M -80 172 q 50 20  100 6   t 100 -14 t 100 8  t 100 -18 t 100 12 t 100 14 t 100 -6 t 100 -12 t 100 10 t 100 4 t 100 -10" fill="none"/>
+    <path id="w9"  d="M -80 186 q 65 -26 130 -8  t 130 14 t 130 -20 t 130 10 t 130 16 t 130 -12 t 130 8  t 130 -14" fill="none"/>
+    <path id="w10" d="M -80 200 q 55 18  110 4   t 110 -12 t 110 10 t 110 -16 t 110 8  t 110 12 t 110 -8 t 110 -10 t 110 8 t 110 6" fill="none"/>
   </defs>
 
   <style>
-    .rl, .rr { animation: 7s ease-in-out infinite; }
-    .rl { animation-name: driftL; }
-    .rr { animation-name: driftR; }
+    .dl, .dr { animation: 10s ease-in-out infinite; }
+    .dl { animation-name: driftL; }
+    .dr { animation-name: driftR; }
     @keyframes driftL {
-      0%, 100% { transform: translateX(0);     opacity: 0.15; }
-      50%      { transform: translateX(-26px); opacity: 0.9;  }
+      0%, 100% { transform: translateX(0);     opacity: 0.45; }
+      50%      { transform: translateX(-24px); opacity: 1;    }
     }
     @keyframes driftR {
-      0%, 100% { transform: translateX(0);    opacity: 0.15; }
-      50%      { transform: translateX(26px); opacity: 0.9;  }
+      0%, 100% { transform: translateX(0);    opacity: 0.45; }
+      50%      { transform: translateX(24px); opacity: 1;    }
     }
     .glow { animation: breathe 6s ease-in-out infinite; }
     @keyframes breathe {
@@ -48,32 +55,53 @@
 
   <rect x="1" y="1" width="998" height="238" rx="12" fill="#07060c" stroke="#2a2440" stroke-width="1"/>
 
-  <rect x="40" y="119.5" width="920" height="1" fill="url(#rule)"/>
+  <!-- the flame field: ice / violet / teal / gold / rose, halo + core -->
+  <g stroke-linecap="round">
+    <g class="dl" style="animation-delay:-1.2s; animation-duration:11.5s">
+      <use xlink:href="#w1" href="#w1" stroke="#7dd3fc" stroke-opacity="0.10" stroke-width="9"/>
+      <use xlink:href="#w1" href="#w1" stroke="#bfeaff" stroke-opacity="0.55" stroke-width="1.5"/>
+    </g>
+    <g class="dr" style="animation-delay:-5.7s; animation-duration:9.4s">
+      <use xlink:href="#w2" href="#w2" stroke="#7dd3fc" stroke-opacity="0.08" stroke-width="7"/>
+      <use xlink:href="#w2" href="#w2" stroke="#7dd3fc" stroke-opacity="0.40" stroke-width="1.2"/>
+    </g>
+    <g class="dr" style="animation-delay:-2.9s; animation-duration:12.6s">
+      <use xlink:href="#w3" href="#w3" stroke="#bd93f9" stroke-opacity="0.11" stroke-width="10"/>
+      <use xlink:href="#w3" href="#w3" stroke="#dcc7ff" stroke-opacity="0.50" stroke-width="1.6"/>
+    </g>
+    <g class="dl" style="animation-delay:-7.8s; animation-duration:10.2s">
+      <use xlink:href="#w4" href="#w4" stroke="#bd93f9" stroke-opacity="0.08" stroke-width="6"/>
+      <use xlink:href="#w4" href="#w4" stroke="#bd93f9" stroke-opacity="0.38" stroke-width="1.1"/>
+    </g>
+    <g class="dl" style="animation-delay:-4.1s; animation-duration:13.3s">
+      <use xlink:href="#w5" href="#w5" stroke="#2dd4bf" stroke-opacity="0.12" stroke-width="11"/>
+      <use xlink:href="#w5" href="#w5" stroke="#a7f3e9" stroke-opacity="0.52" stroke-width="1.7"/>
+    </g>
+    <g class="dr" style="animation-delay:-0.6s; animation-duration:9.8s">
+      <use xlink:href="#w6" href="#w6" stroke="#2dd4bf" stroke-opacity="0.08" stroke-width="6"/>
+      <use xlink:href="#w6" href="#w6" stroke="#2dd4bf" stroke-opacity="0.36" stroke-width="1.1"/>
+    </g>
+    <g class="dr" style="animation-delay:-6.5s; animation-duration:11.9s">
+      <use xlink:href="#w7" href="#w7" stroke="#e0af68" stroke-opacity="0.11" stroke-width="9"/>
+      <use xlink:href="#w7" href="#w7" stroke="#ffe3ae" stroke-opacity="0.50" stroke-width="1.5"/>
+    </g>
+    <g class="dl" style="animation-delay:-3.3s; animation-duration:10.7s">
+      <use xlink:href="#w8" href="#w8" stroke="#e0af68" stroke-opacity="0.08" stroke-width="6"/>
+      <use xlink:href="#w8" href="#w8" stroke="#e0af68" stroke-opacity="0.36" stroke-width="1.1"/>
+    </g>
+    <g class="dl" style="animation-delay:-8.9s; animation-duration:12.1s">
+      <use xlink:href="#w9" href="#w9" stroke="#f7768e" stroke-opacity="0.11" stroke-width="10"/>
+      <use xlink:href="#w9" href="#w9" stroke="#ffc2cd" stroke-opacity="0.48" stroke-width="1.5"/>
+    </g>
+    <g class="dr" style="animation-delay:-1.9s; animation-duration:9.1s">
+      <use xlink:href="#w10" href="#w10" stroke="#f7768e" stroke-opacity="0.07" stroke-width="6"/>
+      <use xlink:href="#w10" href="#w10" stroke="#f7768e" stroke-opacity="0.34" stroke-width="1.1"/>
+    </g>
+  </g>
+
+  <!-- readability scrim + warm glow under the name -->
+  <ellipse cx="500" cy="120" rx="330" ry="110" fill="url(#scrim)"/>
   <ellipse class="glow" cx="500" cy="120" rx="250" ry="95" fill="url(#glow)"/>
-
-  <!-- left rays: gentle sine waves drifting outward -->
-  <g fill="none" stroke="url(#beam)" stroke-width="2" stroke-linecap="round">
-    <path class="rl" d="M 60 34 q 25 -8 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"   style="animation-delay:-0.4s; animation-duration:6.4s"/>
-    <path class="rl" d="M 150 58 q 20 6 40 0 t 40 0 t 40 0 t 40 0 t 40 0"           style="animation-delay:-2.1s; animation-duration:7.6s"/>
-    <path class="rl" d="M 40 82 q 28 -10 56 0 t 56 0 t 56 0 t 56 0 t 56 0 t 56 0"   style="animation-delay:-4.8s; animation-duration:6.9s"/>
-    <path class="rl" d="M 120 104 q 22 7 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0"   style="animation-delay:-1.3s; animation-duration:8.2s"/>
-    <path class="rl" d="M 90 136 q 24 -7 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0"   style="animation-delay:-5.6s; animation-duration:7.1s"/>
-    <path class="rl" d="M 170 160 q 20 8 40 0 t 40 0 t 40 0 t 40 0 t 40 0"          style="animation-delay:-3.0s; animation-duration:6.6s"/>
-    <path class="rl" d="M 55 184 q 26 -9 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0"   style="animation-delay:-6.2s; animation-duration:7.9s"/>
-    <path class="rl" d="M 140 206 q 19 6 38 0 t 38 0 t 38 0 t 38 0 t 38 0 t 38 0"   style="animation-delay:-2.7s; animation-duration:6.2s"/>
-  </g>
-
-  <!-- right rays: mirrored waves -->
-  <g fill="none" stroke="url(#beam)" stroke-width="2" stroke-linecap="round">
-    <path class="rr" d="M 640 34 q 25 8 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"    style="animation-delay:-3.4s; animation-duration:7.3s"/>
-    <path class="rr" d="M 630 58 q 20 -6 40 0 t 40 0 t 40 0 t 40 0 t 40 0"          style="animation-delay:-0.9s; animation-duration:6.5s"/>
-    <path class="rr" d="M 620 82 q 28 10 56 0 t 56 0 t 56 0 t 56 0 t 56 0 t 56 0"   style="animation-delay:-5.1s; animation-duration:8.0s"/>
-    <path class="rr" d="M 620 104 q 22 -7 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0"  style="animation-delay:-2.4s; animation-duration:6.8s"/>
-    <path class="rr" d="M 620 136 q 24 7 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0"   style="animation-delay:-4.2s; animation-duration:7.5s"/>
-    <path class="rr" d="M 630 160 q 20 -8 40 0 t 40 0 t 40 0 t 40 0 t 40 0"         style="animation-delay:-1.7s; animation-duration:6.3s"/>
-    <path class="rr" d="M 625 184 q 26 9 52 0 t 52 0 t 52 0 t 52 0 t 52 0 t 52 0"   style="animation-delay:-6.7s; animation-duration:7.7s"/>
-    <path class="rr" d="M 630 206 q 19 -6 38 0 t 38 0 t 38 0 t 38 0 t 38 0 t 38 0"  style="animation-delay:-3.8s; animation-duration:6.1s"/>
-  </g>
 
   <g class="sway">
     <text x="500" y="112" text-anchor="middle"

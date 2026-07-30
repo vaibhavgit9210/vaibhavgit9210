@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/sunrays.svg" alt="Vaibhav Kumar" width="100%">
+  <img src="assets/sunrays.svg?v=2" alt="Vaibhav Kumar" width="100%">
 </p>
 
 <p align="center">
