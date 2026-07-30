@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/sunrays.svg" alt="Vaibhav Kumar — sunrays banner" width="100%">
+</p>
+
 - 👋 Yo,
 - 🗺 Exploring Computer Science and STEM field in general.
 - 💼 Working as a tech consultant at a leading FinTech company in India.

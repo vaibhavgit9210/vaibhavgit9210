@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240" role="img" aria-label="Vaibhav Kumar">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#ffd9a0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffd9a0" stop-opacity="0.55"/>
+      <stop offset="1"   stop-color="#ffd9a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#e8e4f0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#e8e4f0" stop-opacity="0.14"/>
+      <stop offset="1"   stop-color="#e8e4f0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#ffc46b" stop-opacity="0.16"/>
+      <stop offset="0.6" stop-color="#bd93f9" stop-opacity="0.05"/>
+      <stop offset="1"   stop-color="#bd93f9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#ffe9c4"/>
+      <stop offset="0.5" stop-color="#ffffff"/>
+      <stop offset="1"   stop-color="#ffd9a0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .rl, .rr { animation: 7s ease-in-out infinite; }
+    .rl { animation-name: driftL; }
+    .rr { animation-name: driftR; }
+    @keyframes driftL {
+      0%, 100% { transform: translateX(0);     opacity: 0.15; }
+      50%      { transform: translateX(-26px); opacity: 0.9;  }
+    }
+    @keyframes driftR {
+      0%, 100% { transform: translateX(0);    opacity: 0.15; }
+      50%      { transform: translateX(26px); opacity: 0.9;  }
+    }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.65; }
+      50%      { opacity: 1;    }
+    }
+    .sway { animation: sway 9s ease-in-out infinite; }
+    @keyframes sway {
+      0%, 100% { transform: translateX(-4px); }
+      50%      { transform: translateX(4px);  }
+    }
+  </style>
+
+  <rect x="1" y="1" width="998" height="238" rx="12" fill="#07060c" stroke="#2a2440" stroke-width="1"/>
+
+  <rect x="40" y="119.5" width="920" height="1" fill="url(#rule)"/>
+  <ellipse class="glow" cx="500" cy="120" rx="250" ry="95" fill="url(#glow)"/>
+
+  <!-- left rays -->
+  <rect class="rl" x="60"  y="34"  width="300" height="2" fill="url(#beam)" style="animation-delay:-0.4s; animation-duration:6.4s"/>
+  <rect class="rl" x="150" y="58"  width="220" height="2" fill="url(#beam)" style="animation-delay:-2.1s; animation-duration:7.6s"/>
+  <rect class="rl" x="40"  y="82"  width="340" height="2" fill="url(#beam)" style="animation-delay:-4.8s; animation-duration:6.9s"/>
+  <rect class="rl" x="120" y="104" width="260" height="2" fill="url(#beam)" style="animation-delay:-1.3s; animation-duration:8.2s"/>
+  <rect class="rl" x="90"  y="136" width="290" height="2" fill="url(#beam)" style="animation-delay:-5.6s; animation-duration:7.1s"/>
+  <rect class="rl" x="170" y="160" width="200" height="2" fill="url(#beam)" style="animation-delay:-3.0s; animation-duration:6.6s"/>
+  <rect class="rl" x="55"  y="184" width="320" height="2" fill="url(#beam)" style="animation-delay:-6.2s; animation-duration:7.9s"/>
+  <rect class="rl" x="140" y="206" width="230" height="2" fill="url(#beam)" style="animation-delay:-2.7s; animation-duration:6.2s"/>
+
+  <!-- right rays -->
+  <rect class="rr" x="640" y="34"  width="300" height="2" fill="url(#beam)" style="animation-delay:-3.4s; animation-duration:7.3s"/>
+  <rect class="rr" x="630" y="58"  width="220" height="2" fill="url(#beam)" style="animation-delay:-0.9s; animation-duration:6.5s"/>
+  <rect class="rr" x="620" y="82"  width="340" height="2" fill="url(#beam)" style="animation-delay:-5.1s; animation-duration:8.0s"/>
+  <rect class="rr" x="620" y="104" width="260" height="2" fill="url(#beam)" style="animation-delay:-2.4s; animation-duration:6.8s"/>
+  <rect class="rr" x="620" y="136" width="290" height="2" fill="url(#beam)" style="animation-delay:-4.2s; animation-duration:7.5s"/>
+  <rect class="rr" x="630" y="160" width="200" height="2" fill="url(#beam)" style="animation-delay:-1.7s; animation-duration:6.3s"/>
+  <rect class="rr" x="625" y="184" width="320" height="2" fill="url(#beam)" style="animation-delay:-6.7s; animation-duration:7.7s"/>
+  <rect class="rr" x="630" y="206" width="230" height="2" fill="url(#beam)" style="animation-delay:-3.8s; animation-duration:6.1s"/>
+
+  <g class="sway">
+    <text x="500" y="112" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="42" font-weight="bold" letter-spacing="6" fill="url(#name)">VAIBHAV KUMAR</text>
+    <text x="500" y="150" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="19" letter-spacing="4" fill="#bd93f9" opacity="0.75">वैभव कुमार</text>
+    <text x="500" y="182" text-anchor="middle"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="11" letter-spacing="3" fill="#e8e4f0" opacity="0.4">EXPLORING CS · STEM · BUILDING TOYS THAT THINK</text>
+  </g>
+</svg>
